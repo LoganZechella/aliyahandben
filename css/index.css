@@ -1,0 +1,84 @@
+:root {
+    font-family: 'Old Standard TT', serif;
+}
+
+html {
+    background-color: #f0e8dd;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0 0 0 0;
+}
+
+body {
+    display: flex;
+}
+
+main {
+    width: 100vw;
+    min-height: 90vh;
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+
+#top-section {
+    display: flex;
+    width: 95vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0 0 0;
+}
+
+#title-text {
+    margin: 0.5em 0 0.5em 0;
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#date {
+    margin: 0 0 0 0;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 0.5;
+}
+
+#time {
+    line-height: 0.75;
+    font-size: 18px;
+}
+
+#party-title {
+    display: flex;
+    justify-content: center;
+    margin: 1.5em 0 0 0;
+    text-decoration: underline;
+}
+
+#column-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0.5em 0 0.5em 0;
+    overflow-x: hidden;
+}
+
+#bridesmaid-title, #groomsmen-title {
+    text-decoration: underline;
+}
+
+#left-list>li, #right-list>li {
+    font-size: 18px;
+    list-style-type: none;
+}
+
+#left-list, #right-list {
+    text-align: center;
+    padding: 0 0 0 0;
+    line-height: 1.5;
+}
+
