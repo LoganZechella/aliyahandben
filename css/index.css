@@ -1,5 +1,6 @@
 :root {
     font-family: 'Old Standard TT', 'Tangerine';
+    font-weight: bold;
     --animate-duration: 800ms;
 }
 
