@@ -1,5 +1,6 @@
 :root {
     font-family: 'Old Standard TT', serif;
+    --animate-duration: 800ms;
 }
 
 html {
@@ -10,20 +11,23 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0 0 0 0;
 }
 
+ol {
+    display: flex;
+}
+
 body {
     display: flex;
 }
 
 main {
     width: 100vw;
-    min-height: 90vh;
+    height: 100vh;
     overflow-x: auto;
     overflow-y: scroll;
 }
 
 #top-section {
     display: flex;
-    width: 95vw;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -32,11 +36,12 @@ main {
 
 #title-text {
     margin: 0.5em 0 0.5em 0;
-    font-size: 34px;
+    font-size: 38px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.182);
 }
 
 #date {
@@ -51,11 +56,18 @@ main {
     font-size: 18px;
 }
 
+#line-break {
+    width: 100%;
+    height: auto;
+    margin: -5em 0 -5em 0;
+}
+
 #party-title {
     display: flex;
     justify-content: center;
-    margin: 1.5em 0 0 0;
+    margin: 2em 0 0 0;
     text-decoration: underline;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.182);
 }
 
 #column-section {
@@ -69,16 +81,53 @@ main {
 
 #bridesmaid-title, #groomsmen-title {
     text-decoration: underline;
+    font-size: 22px;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.182);
 }
 
-#left-list>li, #right-list>li {
-    font-size: 18px;
+#left-list:nth-child(1), #right-list:nth-child(1) {
     list-style-type: none;
+    font-size: 20px;
 }
 
 #left-list, #right-list {
     text-align: center;
     padding: 0 0 0 0;
+    line-height: 1.5;
+}
+
+#bottom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#procession-title {
+    text-decoration: underline;
+    font-size: 24px;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.182);
+}
+
+#event-ol {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin: 1em 0 0 0;
+    padding: 0 0 0 0;
+    overflow-x: scroll;
+    list-style-type: disc;
+}
+
+#event-ol>li {
+    font-size: 16px;
+    /* padding: 0 0.5em 0 0.5em; */
+}
+
+#event-list {
+    height: auto;
     line-height: 1.5;
 }
 
