@@ -1,5 +1,5 @@
 :root {
-    font-family: 'Old Standard TT', serif;
+    font-family: 'Old Standard TT', 'Tangerine';
     --animate-duration: 800ms;
 }
 
@@ -36,7 +36,7 @@ main {
 
 #title-text {
     margin: 0.5em 0 0.5em 0;
-    font-size: 38px;
+    font-size: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +46,7 @@ main {
 
 #date {
     margin: 0 0 0 0;
-    font-size: 22px;
+    font-size: 30px;
     font-weight: bold;
     line-height: 0.5;
 }
@@ -68,6 +68,7 @@ main {
     margin: 2em 0 0 0;
     text-decoration: underline;
     text-shadow: 2px 1px rgba(0, 0, 0, 0.182);
+    font-size: 24px;
 }
 
 #column-section {
@@ -81,13 +82,13 @@ main {
 
 #bridesmaid-title, #groomsmen-title {
     text-decoration: underline;
-    font-size: 22px;
+    font-size: 24px;
     text-shadow: 2px 1px rgba(0, 0, 0, 0.182);
 }
 
 #left-list:nth-child(1), #right-list:nth-child(1) {
     list-style-type: none;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 #left-list, #right-list {
@@ -100,7 +101,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    
 }
 
 #procession-title {
@@ -117,7 +118,6 @@ main {
     width: 100vw;
     margin: 1em 0 0 0;
     padding: 0 0 0 0;
-    overflow-x: scroll;
     list-style-type: disc;
 }
 
